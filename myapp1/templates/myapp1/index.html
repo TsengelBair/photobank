@@ -1,0 +1,37 @@
+{% extends "myapp1/base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Добро пожаловать в Фотобанк!</h1>
+    <p class="lead">Фотоба́нк — это банк изображений, который выступает посредником между авторами изображений и их покупателями.
+        Он берёт на себя задачу поиска покупателей и приёма платежей, что значительно упрощает жизнь фотографам и
+        иллюстраторам.</p>
+    <hr class="my-4">
+    <p>Загрузите свои фотографии и наслаждайтесь возможностью продавать их миллионам пользователей по всему миру!</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'myapp1:upload_image' %}" role="button">Загрузить изображение</a>
+</div>
+
+<div class="card-deck">
+    <div class="card">
+        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Placeholder">
+        <div class="card-body">
+            <h5 class="card-title">Карточка 1</h5>
+            <p class="card-text">Некоторый текст о карточке 1. Может содержать дополнительные детали или информацию.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Placeholder">
+        <div class="card-body">
+            <h5 class="card-title">Карточка 2</h5>
+            <p class="card-text">Некоторый текст о карточке 2. Может содержать дополнительные детали или информацию.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Placeholder">
+        <div class="card-body">
+            <h5 class="card-title">Карточка 3</h5>
+            <p class="card-text">Некоторый текст о карточке 3. Может содержать дополнительные детали или информацию.</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

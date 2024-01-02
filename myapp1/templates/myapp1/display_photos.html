@@ -1,0 +1,14 @@
+{% extends "myapp1/base.html" %}
+
+{% block content %}
+
+
+        <ul>
+            {% for image in topics_with_images %}
+                <li>
+                    <img src="{{ image.image.url }}" alt="Photo">
+                </li>
+            {% endfor %}
+        </ul>
+
+{% endblock content %}
